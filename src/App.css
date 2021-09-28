@@ -21,7 +21,33 @@
 .App-title {
   font-size: 1.5em;
 }
-
+.App-header {
+  display: flex;
+}
+.App-header img {
+  height: 40px;
+  width: 40px;
+}
+.App-header h2 {
+  color: white;
+  margin-left: 5px;
+}
+.cardcontainer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.card {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.card h1 {
+  text-align: center;
+}
+.card p {
+  text-align: justify;
+}
 .App-content {
   padding-top: 20px;
   font-size: large;
@@ -53,5 +79,45 @@ tr {
 }
 
 .card {
-  width: 18rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.unicard {
+  border: 2px black solid;
+  margin: 15px;
+  width: 400px;
+}
+.unicard img {
+  width: 400px;
+}
+.unicard button {
+  background-color: blue;
+  margin: 20% 30% 20%;
+  border-radius: 10%;
+  padding: 10px;
+}
+.unicard button a {
+  color: black;
+}
+.tablestyle {
+  border-collapse: collapse;
+  min-width: 700px;
+  width: 95vw;
+  margin: 100px auto;
+}
+thead tr {
+  background-color: blue;
+  padding: 10px;
+  margin: 15px;
+  color: azure;
+  text-align: left;
+}
+th,
+td {
+  padding: 10px 15px;
+
+  width: 150px;
+}
+.selected-row {
+  background-color: coral;
 }
